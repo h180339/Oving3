@@ -1,2 +1,3 @@
 # Oving3
-"Eirik e best"
+Joakim er faktisk best.
+"Eirik e nest best"
