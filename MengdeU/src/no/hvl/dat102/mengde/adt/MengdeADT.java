@@ -4,11 +4,11 @@ import java.util.Iterator;
 
 public interface MengdeADT<T> {
 	// Interface som definerer alle operasjoner i en ADT
-	// med navn MengdeADT (en datasamling, en høynivå datastruktur)
+	// med navn MengdeADT (en datasamling, en hï¿½ynivï¿½ datastruktur)
 
 	/**
 	 * Legger til et objekt av klasse T til dette mengde-objektet hvis det ikke
-	 * fins fra før
+	 * fins fra fï¿½r
 	 * 
 	 * @param element som skal legges til
 	 */
@@ -49,7 +49,7 @@ public interface MengdeADT<T> {
 	boolean inneholder(T element);
 
 	/**
-	 * Tester om this-mengden og parameteren inneholder nøyaktig de samme
+	 * Tester om this-mengden og parameteren inneholder nï¿½yaktig de samme
 	 * elementene
 	 * 
 	 * @param m2 er  mengden som testes
@@ -94,7 +94,7 @@ public interface MengdeADT<T> {
 	public boolean undermengde(MengdeADT<T> m2);
 
 	/**
-	 * Oppretter et 'oppramsobjekt' som kan brukes til å gjennomgå alle
+	 * Oppretter et 'oppramsobjekt' som kan brukes til ï¿½ gjennomgï¿½ alle
 	 * elementer i mengden etter tur en gang
 	 * 
 	 * @return et oppramsobjekt

@@ -63,12 +63,33 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 
 	@Override
 	public T fjern(T element) {
-		boolean funnet = false;
-		LinearNode<T> forgjenger, aktuell;
+
 		T resultat = null;
-		/* Fyll ut
-		 * 
-		 */
+		LinearNode<T> forgjenger = this.start;
+		LinearNode<T> denne = forgjenger.getNeste();
+
+		if (forgjenger.getElement().equals(element)) { //sjekker første element
+			resultat = forgjenger.getElement();
+			this.start = forgjenger.getNeste();
+			antall --;
+			return resultat;
+		}
+		forgjenger = denne;
+		denne = denne.getNeste();
+
+		for (int i = 0; i < antall - 1; i++) {
+			if (forgjenger.getElement().equals(element)) {
+				resultat = forgjenger.getElement();
+				forgjenger.setNeste(denne.getNeste());
+				antall--;
+				return resultat;
+			}
+			forgjenger = denne;
+			denne = denne.getNeste();
+		}
+
+
+
 		return resultat;
 	}//
 
@@ -127,10 +148,21 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 
 	@Override
 	public boolean equals(MengdeADT<T> m2) {
-		boolean likeMengder = true;
-		T element = null;
-		//Fyll ut
-		return likeMengder;
+
+		if (antall() != m2.antall()) { //sjekker først om det er like mange elementer i mengdene
+			return false;
+		}
+		Iterator<T> oppramser = m2.oppramser();
+
+		if (!this.start.equals(oppramser.next())) { //sjekker første elementet
+			return false;
+		}
+		while (oppramser.hasNext()) {
+			if (!this.start.getNeste().equals(oppramser.next())) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 	@Override
@@ -140,11 +172,13 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 
 	@Override
 	public int antall() {
+
 		return antall;
 	}
 
 	@Override
 	public Iterator<T> oppramser() {
+
 		return new KjedetIterator<T>(start);
 	}
 	

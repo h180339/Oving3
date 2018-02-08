@@ -66,7 +66,7 @@ public class TabellMengde<T> implements MengdeADT<T> {
 
 	@Override
 	public T fjern(T element) {
-		// Søker etter og fjerner element.Retur med null ved ikke-funn
+		// Sï¿½ker etter og fjerner element.Retur med null ved ikke-funn
 		
 		boolean funnet = false;
 		T svar = null;
@@ -149,13 +149,23 @@ public class TabellMengde<T> implements MengdeADT<T> {
 
 	@Override
 	public boolean equals(MengdeADT<T> m2) {
-		boolean likeMengder = true;
-		T element;
 
-		/*
-		 * Fyll ut
-		 */
-		return likeMengder;
+
+		if (antall() != m2.antall()) { //sjekker fÃ¸rst om det er like mange elementer i mengdene
+			return false;
+		}
+		if (antall == 0) {
+			return true;
+		}
+		Iterator <T> oppram = oppramser();
+		int teller = 0;
+		while (oppram.hasNext()) {
+			if (!tab[teller].equals(oppram.next())) {
+				return false;
+			}
+			teller++;
+		}
+		return true;
 	}
 
 	@Override

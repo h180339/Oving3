@@ -4,6 +4,7 @@ package no.hvl.dat102.mengde.kjedet;
 //************************************************************
 
 class LinearNode<T>{
+
 private LinearNode<T> neste;
 private T element;
 
@@ -22,9 +23,10 @@ neste   = null;
 element = elem;
 }
 /**********************************************************
-Returnerer etterfølger.
+Returnerer etterfï¿½lger.
 **********************************************************/
 public LinearNode<T> getNeste() {
+
 return neste;
 }
 
@@ -32,20 +34,23 @@ return neste;
 Setter neste til node
 **********************************************************/
 public void setNeste (LinearNode<T> node) {
+
 neste = node;
 }
 
 /**********************************************************
 Returnerer elementet til denne noden
 **********************************************************/
-public T getElement() {
+public T getElement()
+{
 return element;
 }
 
 /**********************************************************
 Setter nytt element i denne noden.
 **********************************************************/
-public void setElement (T elem) {
+public void setElement (T elem)
+{
 element = elem;
 }
 
