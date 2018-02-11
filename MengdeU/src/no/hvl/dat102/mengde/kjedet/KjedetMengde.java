@@ -110,25 +110,41 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 
 	@Override
 	public MengdeADT<T> union(MengdeADT<T> m2) {
-		MengdeADT<T> begge = new KjedetMengde<T>();
-		LinearNode<T> aktuell = start;
-		T element = null;
 
-		/*
-		 * Fyll ut
-		 */
+		MengdeADT<T> begge = new KjedetMengde<T>();
+
+		Iterator<T> teller = m2.oppramser();
+		Iterator<T> teller2 = this.oppramser();
+
+		HashMap kart = new HashMap();
+
+		while (teller2.hasNext()) {
+			kart.put(teller2.next(), true);
+		}
+		while (teller.hasNext()) {
+			kart.put(teller.next(), true);
+		}
+		for (Object nokkel: kart.keySet()) {
+			begge.leggTil((T)nokkel);
+		}
+
 		return begge;
 	}//
 
 	@Override
 	public MengdeADT<T> snitt(MengdeADT<T> m2) {
-		MengdeADT<T> snittM = new KjedetMengde<T>();
-		T element;
-		/* Fyll ut...
-		 * 
-			if (this.inneholder(element))		 
-				((KjedetMengde<T>) snittM).settInn(element);
-		*/
+
+		MengdeADT<T> snittM = new KjedetMengde();
+		Iterator<T> teller = m2.oppramser();
+		LinearNode<T> aktuell = start;
+
+		while(teller.hasNext()) {
+			T element = teller.next();
+			if (aktuell.getElement() == element) {
+				snittM.leggTil(element);
+			}
+		}
+
 		return snittM;
 	}
 
@@ -137,10 +153,19 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 	@Override
 	public MengdeADT<T> differens(MengdeADT<T> m2) {
 		MengdeADT<T> differensM = new KjedetMengde<T>();
-		T element;
-		/*Fyll ut
-		 * 
-		 */
+		Iterator<T> teller = this.oppramser();
+		Iterator<T> teller2 = m2.oppramser();
+		T teller2El = null;
+		while(teller.hasNext()) {
+			T tellerEl = teller.next();
+			if (teller2.hasNext()) {
+				teller2El = teller2.next();
+			}
+			if (tellerEl != teller2El) {
+				differensM.leggTil(tellerEl);
+				System.out.println(tellerEl);
+			}
+		}
 		
 		return differensM;
 	}
@@ -167,15 +192,11 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 		}
 		Iterator<T> oppramser = m2.oppramser();
 
-		if (!this.start.getElement().equals(oppramser.next())) { //sjekker første elementet
-			return false;
-		}
-		LinearNode<T> denne = this.start;
+		LinearNode<T> denne;
 		while (oppramser.hasNext()) {
-			if (!denne.getNeste().getElement().equals(oppramser.next())) {
+			if (!inneholder(oppramser.next())) {
 				return false;
 			}
-			denne = denne.getNeste();
 		}
 		return true;
 	}
