@@ -10,7 +10,7 @@ import java.util.*;
 public class KjedetMengde<T> implements MengdeADT<T> {
 	private static Random rand = new Random();
 	private int antall; // antall elementer i mengden
-	private LinearNode<T> start;
+	private LinearNode<T> start,slutt;
 
 	/**
 	 * Oppretter en tom mengde.
@@ -22,6 +22,14 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 
 	@Override
 	public void leggTil(T element) {
+		if (erTom()) {
+			LinearNode<T> node = new LinearNode<T>(element);
+			node.setNeste(start);
+			start = node;
+			slutt = node;
+			antall++;
+
+		}
 		if (!(inneholder(element))) {
 			LinearNode<T> node = new LinearNode<T>(element);
 			node.setNeste(start);
@@ -80,7 +88,12 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 		for (int i = 0; i < antall - 1; i++) {
 			if (forgjenger.getElement().equals(element)) {
 				resultat = forgjenger.getElement();
-				forgjenger.setNeste(denne.getNeste());
+				if (resultat == slutt.getElement()) {
+					forgjenger.setNeste(null);
+				}else {
+					forgjenger.setNeste(denne.getNeste());
+				}
+
 				antall--;
 				return resultat;
 			}
@@ -154,13 +167,15 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 		}
 		Iterator<T> oppramser = m2.oppramser();
 
-		if (!this.start.equals(oppramser.next())) { //sjekker første elementet
+		if (!this.start.getElement().equals(oppramser.next())) { //sjekker første elementet
 			return false;
 		}
+		LinearNode<T> denne = this.start;
 		while (oppramser.hasNext()) {
-			if (!this.start.getNeste().equals(oppramser.next())) {
+			if (!denne.getNeste().getElement().equals(oppramser.next())) {
 				return false;
 			}
+			denne = denne.getNeste();
 		}
 		return true;
 	}
