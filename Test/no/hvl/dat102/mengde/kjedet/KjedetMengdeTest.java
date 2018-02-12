@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 
 import no.hvl.dat102.mengde.adt.MengdeADT;
 
+import no.hvl.dat102.mengde.tabell.TabellMengde;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -21,29 +22,53 @@ public class KjedetMengdeTest {
 	private MengdeADT<Integer> m1;
 	private MengdeADT<Integer> m2;
 
+	private MengdeADT<Integer> m4;
+	private MengdeADT<Integer> m5;
+
 	@Before
 	public void setup() {
 		m1 = new KjedetMengde();
 		m2 = new KjedetMengde();
+
+		m4 = new TabellMengde();
+		m5 = new TabellMengde();
+
 
 	}
 
 	@org.junit.Test
 	public void equals() {
 
+		assertEquals(true, m1.equals(m2));
+		assertEquals(true, m4.equals(m5));
+
 		m1.leggTil(e0);
 		m1.leggTil(e1);
 		m1.leggTil(e2);
 
-		m2.leggTil(e0);
 		m2.leggTil(e1);
 		m2.leggTil(e2);
+		m2.leggTil(e0);
 
-		assertEquals(m1.equals(m2), true);
+		m4.leggTil(e0);
+		m4.leggTil(e1);
+		m4.leggTil(e2);
+
+		m5.leggTil(e1);
+		m5.leggTil(e2);
+		m5.leggTil(e0);
+
+		assertEquals(true , m1.equals(m2));
+
+		assertEquals(true , m4.equals(m5));
 
 		m2.leggTil(e4);
 
-		assertEquals(m1.equals(m2), false);
+		m5.leggTil(e4);
+
+		assertEquals(false , m1.equals(m2));
+
+		assertEquals(false , m4.equals(m5));
 
 	}
 

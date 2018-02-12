@@ -25,7 +25,7 @@ public class TabellMengde<T> implements MengdeADT<T> {
 
 	@Override
 	public int antall() {
-		return antall;
+		return this.antall;
 	}
 
 	@Override
@@ -154,19 +154,19 @@ public class TabellMengde<T> implements MengdeADT<T> {
 		if (antall() != m2.antall()) { //sjekker først om det er like mange elementer i mengdene
 			return false;
 		}
-		if (antall == 0) {
+		if (this.antall == 0 && m2.antall() == 0 ) {
 			return true;
 		}
-		Iterator <T> oppram = oppramser();
-		int teller = 0;
-		while (oppram.hasNext()) {
-			if (!tab[teller].equals(oppram.next())) {
+		Iterator <T> oppram = m2.oppramser();
+		while(oppram.hasNext()) {
+			if (!inneholder(oppram.next())) {
 				return false;
 			}
-			teller++;
 		}
+
 		return true;
 	}
+
 
 	@Override
 	public void leggTilAlle(MengdeADT<T> m2) {
@@ -189,4 +189,4 @@ public class TabellMengde<T> implements MengdeADT<T> {
 	}
 
 
-}// class
+}// c
