@@ -2,7 +2,7 @@ package no.hvl.dat102.mengde.tabell;
 
 import no.hvl.dat102.mengde.adt.*;
 
-
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Random;
 
@@ -93,21 +93,50 @@ public class TabellMengde<T> implements MengdeADT<T> {
 	@Override
 	
 	public MengdeADT<T> union(MengdeADT<T> m2) {
-		MengdeADT<T> begge = new TabellMengde<T>();
-		T element = null;		
+
+		TabellMengde<T> hjelper = new TabellMengde<>();
+
+		Iterator<T> teller = m2.oppramser();
+		Iterator<T> teller2 = this.oppramser();
+
 		/*
-		 * Fyll ut
-		 * 	
-		 */	
+		while(teller.hasNext()) {
+			begge.leggTil(teller.next());
+		}
+		while(teller2.hasNext()) {
+			begge.leggTil(teller2.next());
+		} */
+
+		HashMap kart = new HashMap();
+
+		while (teller2.hasNext()) {
+			kart.put(teller2.next(), true);
+		}
+		while (teller.hasNext()) {
+			kart.put(teller.next(), true);
+		}
+		Object [] foo = kart.keySet().toArray();
+
+		hjelper.erstattTab((T[])foo);
+
+		MengdeADT<T> begge = hjelper;
+
 		return begge;
 	}//
+
+	public void erstattTab (T[] bar) {
+		this.tab = bar;
+		antall = bar.length;
+	}
 	
 	
 
 	@Override
 	public MengdeADT<T> snitt(MengdeADT<T> m2) {
 		MengdeADT<T> snittM = new TabellMengde<T>();
-		T element= null;
+
+
+
 		/*
 		 * Fyll ut
 		 */
@@ -150,8 +179,10 @@ public class TabellMengde<T> implements MengdeADT<T> {
 	@Override
 	public boolean equals(MengdeADT<T> m2) {
 
-
+		System.out.println("denne antall" + antall);
+		System.out.println("m2 antall " + m2.antall());
 		if (antall() != m2.antall()) { //sjekker først om det er like mange elementer i mengdene
+			System.out.println("hei");
 			return false;
 		}
 		if (this.antall == 0 && m2.antall() == 0 ) {
@@ -160,6 +191,7 @@ public class TabellMengde<T> implements MengdeADT<T> {
 		Iterator <T> oppram = m2.oppramser();
 		while(oppram.hasNext()) {
 			if (!inneholder(oppram.next())) {
+				System.out.println("hei2");
 				return false;
 			}
 		}
