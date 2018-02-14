@@ -66,30 +66,21 @@ public class TabellMengde<T> implements MengdeADT<T> {
 
 	@Override
 	public T fjern(T element) {
-		// S�ker etter og fjerner element.Retur med null ved ikke-funn
-		
-		boolean funnet = false;
+
 		T svar = null;
-		/*
-		 * Fyll ut
-		 */
+
+		for (int i = 0; i < antall; i++) {
+			if (element == tab[i]) {
+				svar = this.tab[i];
+				tab[i] = tab[antall];
+				antall--;
+			}
+		}
+
+
 		return svar;
 	}
-/* Lite effektiv!
-	@Override
-	public MengdeADT<T> union(MengdeADT<T> m2) {
-		TabellMengde<T> begge = new TabellMengde<T>();
-		for (int i = 0; i < antall; i++) {
-			begge.leggTil(tab[i]);
-		}
-		Iterator<T> teller = m2.oppramser();
 
-		while (teller.hasNext()) {
-			begge.leggTil(teller.next());
-		}
-		return (MengdeADT<T>)begge;
-	}
-	*/
 	@Override
 	
 	public MengdeADT<T> union(MengdeADT<T> m2) {
@@ -99,13 +90,6 @@ public class TabellMengde<T> implements MengdeADT<T> {
 		Iterator<T> teller = m2.oppramser();
 		Iterator<T> teller2 = this.oppramser();
 
-		/*
-		while(teller.hasNext()) {
-			begge.leggTil(teller.next());
-		}
-		while(teller2.hasNext()) {
-			begge.leggTil(teller2.next());
-		} */
 
 		HashMap kart = new HashMap();
 
@@ -126,7 +110,7 @@ public class TabellMengde<T> implements MengdeADT<T> {
 
 	public void erstattTab (T[] bar) {
 		this.tab = bar;
-		antall = bar.length;
+		this.antall = bar.length;
 	}
 	
 	
@@ -135,25 +119,36 @@ public class TabellMengde<T> implements MengdeADT<T> {
 	public MengdeADT<T> snitt(MengdeADT<T> m2) {
 		MengdeADT<T> snittM = new TabellMengde<T>();
 
+		Iterator<T> teller = m2.oppramser();
 
+		while (teller.hasNext()) {
+			T foo = teller.next();
+			if (inneholder(foo)) {
+				snittM.leggTil(foo);
+			}
+		}
 
-		/*
-		 * Fyll ut
-		 */
 		return snittM;
 	}
 
 	@Override
 	public MengdeADT<T> differens(MengdeADT<T> m2) {
 		MengdeADT<T> differensM = new TabellMengde<T>();
-		T element;
-		/*
-		 * Fyll ut
-		 
-			if (!m2.inneholder(element))
-				 ((TabellMengde<T>) differensM).settInn(element);
-		*/
-		
+
+		Iterator<T> teller = this.oppramser();
+		Iterator<T> teller2 = m2.oppramser();
+		T teller2El = null;
+		while(teller.hasNext()) {
+			T tellerEl = teller.next();
+			if (teller2.hasNext()) {
+				teller2El = teller2.next();
+			}
+			if (tellerEl != teller2El) {
+				differensM.leggTil(tellerEl);
+				System.out.println(tellerEl);
+			}
+		}
+
 		return differensM;
 	}
 
@@ -179,10 +174,8 @@ public class TabellMengde<T> implements MengdeADT<T> {
 	@Override
 	public boolean equals(MengdeADT<T> m2) {
 
-		System.out.println("denne antall" + antall);
-		System.out.println("m2 antall " + m2.antall());
+
 		if (antall() != m2.antall()) { //sjekker først om det er like mange elementer i mengdene
-			System.out.println("hei");
 			return false;
 		}
 		if (this.antall == 0 && m2.antall() == 0 ) {
@@ -191,7 +184,6 @@ public class TabellMengde<T> implements MengdeADT<T> {
 		Iterator <T> oppram = m2.oppramser();
 		while(oppram.hasNext()) {
 			if (!inneholder(oppram.next())) {
-				System.out.println("hei2");
 				return false;
 			}
 		}
@@ -218,6 +210,14 @@ public class TabellMengde<T> implements MengdeADT<T> {
 	@Override
 	public Iterator<T> oppramser() {
 		return new TabellIterator<T>(tab, antall);
+	}
+	public String toString() {
+		String ut = "";
+		Iterator<T> oppramser = this.oppramser();
+		while (oppramser.hasNext()) {
+			ut += oppramser.next() + "\n";
+		}
+		return ut;
 	}
 
 

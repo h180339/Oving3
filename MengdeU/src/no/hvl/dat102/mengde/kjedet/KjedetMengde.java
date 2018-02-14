@@ -232,4 +232,13 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 		antall++;
 	}
 
+	public String toString() {
+		String ut = "";
+		Iterator<T> oppramser = this.oppramser();
+		while (oppramser.hasNext()) {
+			ut += oppramser.next() + "\n";
+		}
+		return ut;
+	}
+
 }// class
