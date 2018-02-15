@@ -24,14 +24,14 @@ public class Datakontakt {
 			tab[antall] = person;
 			antall++;
 		}
-
 	}
 
 	public int finnMedlemsIndeks (String medlemsNavn) {
-
 		for (int i = 0; i < antall; i++) {
-			if (tab[i].getNavn().toLowerCase().equals(medlemsNavn.toLowerCase())) {
-				return i;
+			if (tab[i] != null) {
+				if (tab[i].getNavn().toLowerCase().equals(medlemsNavn.toLowerCase())) {
+					return i;
+				}
 			}
 		}
 
@@ -45,11 +45,14 @@ public class Datakontakt {
 			return -1;
 		}
 		for (int i = 0; i < this.antall; i++) {
-			if ((i != index) && (tab[i].getHobbyer().equals(tab[index].getHobbyer())) && (tab[i].getStatusIndeks() == -1)) {
-				tab[i].setStatusIndeks(index);
-				tab[index].setStatusIndeks(i);
-				return i;
+			if (tab[i] != null) {
+				if ((i != index) && (tab[i].getHobbyer().equals(tab[index].getHobbyer())) && (tab[i].getStatusIndeks() == -1)) {
+					tab[i].setStatusIndeks(index);
+					tab[index].setStatusIndeks(i);
+					return i;
+				}
 			}
+
 		}
 		return -1;
 	}
@@ -64,7 +67,33 @@ public class Datakontakt {
 				tab[index].setStatusIndeks(-1);
 			}
 		}
-
-
 	}
+	public Medlem getMedlem(String navn) {
+		return this.tab[finnMedlemsIndeks(navn)];
+	}
+	public void skrivUtHobbyer() {
+		for (Medlem i : tab) {
+			System.out.println(i.getHobbyer());
+		}
+	}
+	public void skrivUtPar() {
+		Medlem[] hjelpeTab = this.tab;
+		for (int i = 0; i < antall; i++) {
+			if (hjelpeTab[i] != null) {
+				int resultat = finnPartnerFor(hjelpeTab[i].getNavn());
+				if (resultat != -1) {
+					System.out.println(hjelpeTab[i].getNavn() + "| " + hjelpeTab[resultat].getNavn());
+					hjelpeTab[i] = null;
+					hjelpeTab[resultat] = null;
+				}
+			}
+		}
+	}
+	public Medlem getMedlemByIndex(int index) {
+		if (index != -1) {
+			return this.tab[index];
+		}
+		return null;
+	}
+
 }

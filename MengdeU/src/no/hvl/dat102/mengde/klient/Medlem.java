@@ -21,7 +21,7 @@ public class Medlem {
 	}
 	public int getStatusIndeks() {
 		return this.statusIndeks;
-	}
+	} //indeksen til partner
 	public String getNavn() {
 		return this.navn;
 	}

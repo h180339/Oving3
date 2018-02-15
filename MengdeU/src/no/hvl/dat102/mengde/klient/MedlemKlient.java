@@ -3,7 +3,7 @@ package no.hvl.dat102.mengde.klient;
 public class MedlemKlient {
 
 	public static void main(String [] args) {
-
+		/*
 		Medlem m1 = new Medlem("Eirik");
 		Medlem m2 = new Medlem("Ørjan");
 		Medlem m3 = new Medlem("Joakim");
@@ -29,6 +29,10 @@ public class MedlemKlient {
 		d1.LeggTilMedlem(m2);
 		d1.LeggTilMedlem(m3);
 		d1.LeggTilMedlem(m4);
+		*/
+
+		Tekstgrensesnitt t = new Tekstgrensesnitt();
+		t.run();
 
 
 
