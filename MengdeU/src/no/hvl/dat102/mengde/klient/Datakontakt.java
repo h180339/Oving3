@@ -32,5 +32,36 @@ public class Datakontakt {
 		}
 		return -1;
 	}
+	public int finnPartnerFor(String medlemsNavn) {
 
+		int index = finnMedlemsIndeks(medlemsNavn); //søker etter medlem i tab
+
+		if (index == -1) {
+			return -1;
+		}
+		for (int i = 0; i < this.antall; i++) {
+
+			if (tab[i].getHobbyer().equals(tab[index])) {
+				if (tab[i].getStatusIndeks() != -1) { //sjekker om medlem er opptatt
+					tab[i].setStatusIndeks(index);
+					tab[index].setStatusIndeks(i);
+					return i;
+				}
+			}
+		}
+		return -1;
+	}
+	public void tilbakestillStatusIndeks(String medlemsNavn) {
+		int index = finnMedlemsIndeks(medlemsNavn);
+
+		if (index != -1) {
+			int partner = tab[index].getStatusIndeks();
+			if (partner != -1) {
+				tab[partner].setStatusIndeks(-1);
+				tab[index].setStatusIndeks(-1);
+			}
+		}
+
+
+	}
 }

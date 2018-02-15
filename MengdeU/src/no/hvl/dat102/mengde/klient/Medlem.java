@@ -12,11 +12,15 @@ public class Medlem {
 
 	public Medlem (String navn) {
 		this.navn = navn;
-		hobbyer = new TabellMengde<>();
+		this.hobbyer = new TabellMengde<>();
+		this.statusIndeks = -1;
 	}
 
 	public void setStatusIndeks(int index) {
 		this.statusIndeks = index;
+	}
+	public int getStatusIndeks() {
+		return this.statusIndeks;
 	}
 	public String getNavn() {
 		return this.navn;
