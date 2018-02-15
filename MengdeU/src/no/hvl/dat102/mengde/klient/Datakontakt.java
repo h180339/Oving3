@@ -20,16 +20,21 @@ public class Datakontakt {
 		if (antall == tab.length) {
 			utvidKapasitet();
 		}
-		tab[antall] = person;
-		antall++;
+		if (finnMedlemsIndeks(person.getNavn()) == -1) {
+			tab[antall] = person;
+			antall++;
+		}
+
 	}
 
 	public int finnMedlemsIndeks (String medlemsNavn) {
+
 		for (int i = 0; i < antall; i++) {
-			if (tab[i].getNavn() == medlemsNavn) {
+			if (tab[i].getNavn().toLowerCase().equals(medlemsNavn.toLowerCase())) {
 				return i;
 			}
 		}
+
 		return -1;
 	}
 	public int finnPartnerFor(String medlemsNavn) {
@@ -40,17 +45,15 @@ public class Datakontakt {
 			return -1;
 		}
 		for (int i = 0; i < this.antall; i++) {
-
-			if (tab[i].getHobbyer().equals(tab[index])) {
-				if (tab[i].getStatusIndeks() != -1) { //sjekker om medlem er opptatt
-					tab[i].setStatusIndeks(index);
-					tab[index].setStatusIndeks(i);
-					return i;
-				}
+			if ((i != index) && (tab[i].getHobbyer().equals(tab[index].getHobbyer())) && (tab[i].getStatusIndeks() == -1)) {
+				tab[i].setStatusIndeks(index);
+				tab[index].setStatusIndeks(i);
+				return i;
 			}
 		}
 		return -1;
 	}
+
 	public void tilbakestillStatusIndeks(String medlemsNavn) {
 		int index = finnMedlemsIndeks(medlemsNavn);
 

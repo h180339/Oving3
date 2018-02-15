@@ -16,7 +16,7 @@ public class Hobby {
 	}
 	public boolean equals(Object hobby2) {
 		Hobby hobbyDenAndre = (Hobby) hobby2;
-		return (hobbyNavn.equals(hobbyDenAndre.getHobbyNavn()));
+		return (this.hobbyNavn.toLowerCase().equals(hobbyDenAndre.getHobbyNavn().toLowerCase()));
 
 	}
 }
