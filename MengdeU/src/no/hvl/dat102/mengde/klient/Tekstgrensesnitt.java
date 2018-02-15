@@ -13,6 +13,25 @@ public class Tekstgrensesnitt {
 
 	public void run() {
 
+		Medlem m1 = new Medlem("Eirik");
+		Medlem m2 = new Medlem("Ørjan");
+		Medlem m3 = new Medlem("Joakim");
+		Medlem m4 = new Medlem("Catherine Zeta Jones");
+
+		m1.leggTilHobby("være best");
+		m1.leggTilHobby("forbli best");
+
+		m2.leggTilHobby("gitting gud");
+		m3.leggTilHobby("gitting gud");
+
+		m4.leggTilHobby("være best");
+		m4.leggTilHobby("forbli best");
+
+		data.LeggTilMedlem(m1);
+		data.LeggTilMedlem(m2);
+		data.LeggTilMedlem(m3);
+		data.LeggTilMedlem(m4);
+
 		Scanner scan = new Scanner(System.in);
 		boolean avslutt = false;
 		while (!avslutt) {
@@ -22,6 +41,8 @@ public class Tekstgrensesnitt {
 			System.out.println("3 - Skriv ut liste over par");
 			System.out.println("4 - Finn partner til medlem");
 			System.out.println("5 - Fjern partnerskap til medlem");
+			System.out.println("6 - Har medlem partner :");
+			System.out.println("7 - Skriv ut liste :");
 
 			System.out.println("0 - avslutt program");
 
@@ -32,13 +53,13 @@ public class Tekstgrensesnitt {
 				case 1:
 					System.out.print("Gi Navn: ");
 					delstreg = scan.nextLine();
-					Medlem m1 = new Medlem(delstreg);
+					Medlem medlem1 = new Medlem(delstreg);
 					System.out.println("Gi hobby :");
 					delstreg = scan.nextLine();
 					if (!delstreg.equals("")) {
-						m1.leggTilHobby(delstreg);
+						medlem1.leggTilHobby(delstreg);
 					}
-					data.LeggTilMedlem(m1);
+					data.LeggTilMedlem(medlem1);
 					break;
 				case 2:
 					System.out.print("Gi navn til medlem: ");
@@ -55,9 +76,23 @@ public class Tekstgrensesnitt {
 					System.out.println("Gi medlems navn: ");
 					delstreg = scan.nextLine();
 					System.out.println(data.getMedlemByIndex(data.finnPartnerFor(delstreg)));
-
 					break;
-				case 5:
+				case 5://fjern partnerskap
+					System.out.println("Gi medlems navn: ");
+					delstreg = scan.nextLine();
+					data.tilbakestillStatusIndeks(delstreg);
+					break;
+				case 6:
+					System.out.println("Gi medlems navn: ");
+					delstreg = scan.nextLine();
+					String utskrift = "nei";
+					if (data.getMedlem(delstreg).getStatusIndeks() != -1) {
+						utskrift = "ja";
+					}
+					System.out.println(utskrift);
+					break;
+				case 7:
+					System.out.println(data.toString());
 					break;
 
 				case 0:

@@ -77,10 +77,14 @@ public class Datakontakt {
 		}
 	}
 	public void skrivUtPar() {
-		Medlem[] hjelpeTab = this.tab;
+
+		Medlem[] hjelpeTab = new Medlem[antall];
+		for (int i = 0; i < antall; i++) {
+			hjelpeTab[i] = this.tab[i];
+		}
 		for (int i = 0; i < antall; i++) {
 			if (hjelpeTab[i] != null) {
-				int resultat = finnPartnerFor(hjelpeTab[i].getNavn());
+				int resultat = hjelpeTab[i].getStatusIndeks();
 				if (resultat != -1) {
 					System.out.println(hjelpeTab[i].getNavn() + "| " + hjelpeTab[resultat].getNavn());
 					hjelpeTab[i] = null;
@@ -88,12 +92,29 @@ public class Datakontakt {
 				}
 			}
 		}
+
 	}
 	public Medlem getMedlemByIndex(int index) {
 		if (index != -1) {
 			return this.tab[index];
 		}
 		return null;
+	}
+	public boolean harPartner(String medlem) {
+		if (tab[finnMedlemsIndeks(medlem)].getStatusIndeks() != -1) {
+			return true;
+		}
+		return false;
+	}
+
+	public String toString() {
+		String s = "";
+		for (int i = 0; i < antall; i++) {
+			if (this.tab[i] != null) {
+				s += tab[i].toString();
+			}
+		}
+		return s;
 	}
 
 }
