@@ -34,13 +34,10 @@ public class Datakontakt {
 				}
 			}
 		}
-
 		return -1;
 	}
 	public int finnPartnerFor(String medlemsNavn) {
-
 		int index = finnMedlemsIndeks(medlemsNavn); //søker etter medlem i tab
-
 		if (index == -1) {
 			return -1;
 		}
@@ -52,14 +49,12 @@ public class Datakontakt {
 					return i;
 				}
 			}
-
 		}
 		return -1;
 	}
 
 	public void tilbakestillStatusIndeks(String medlemsNavn) {
 		int index = finnMedlemsIndeks(medlemsNavn);
-
 		if (index != -1) {
 			int partner = tab[index].getStatusIndeks();
 			if (partner != -1) {
@@ -71,28 +66,24 @@ public class Datakontakt {
 	public Medlem getMedlem(String navn) {
 		return this.tab[finnMedlemsIndeks(navn)];
 	}
-	public void skrivUtHobbyer() {
-		for (Medlem i : tab) {
-			System.out.println(i.getHobbyer());
-		}
-	}
+
 	public void skrivUtPar() {
 
 		Medlem[] hjelpeTab = new Medlem[antall];
 		for (int i = 0; i < antall; i++) {
 			hjelpeTab[i] = this.tab[i];
 		}
+		System.out.println(String.format("%15s", "PARNAVN") + String.format("%35s","HOBBYER"));
 		for (int i = 0; i < antall; i++) {
 			if (hjelpeTab[i] != null) {
 				int resultat = hjelpeTab[i].getStatusIndeks();
 				if (resultat != -1) {
-					System.out.println(hjelpeTab[i].getNavn() + "| " + hjelpeTab[resultat].getNavn());
+					System.out.println(String.format("%-40s" , hjelpeTab[i].getNavn() + "| " + hjelpeTab[resultat].getNavn()) + String.format("%2s", " " + hjelpeTab[i].hobbyToString()));
 					hjelpeTab[i] = null;
 					hjelpeTab[resultat] = null;
 				}
 			}
 		}
-
 	}
 	public Medlem getMedlemByIndex(int index) {
 		if (index != -1) {
@@ -100,21 +91,14 @@ public class Datakontakt {
 		}
 		return null;
 	}
-	public boolean harPartner(String medlem) {
-		if (tab[finnMedlemsIndeks(medlem)].getStatusIndeks() != -1) {
-			return true;
-		}
-		return false;
-	}
 
 	public String toString() {
 		String s = "";
 		for (int i = 0; i < antall; i++) {
 			if (this.tab[i] != null) {
-				s += tab[i].toString();
+				s +=  tab[i].toString();
 			}
 		}
 		return s;
 	}
-
 }

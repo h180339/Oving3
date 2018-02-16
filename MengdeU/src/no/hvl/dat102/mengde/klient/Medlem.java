@@ -38,8 +38,15 @@ public class Medlem {
 		return this.getHobbyer().equals(medlem2.getHobbyer());
 	}
 
+	public String hobbyToString() {
+		String s = "<" + this.hobbyer.toString() + ">";
+
+		return s;
+	}
+
 	public String toString() {
-		return this.navn + " Hobby: " + hobbyer.toString();
+
+		return  "\n" + "-------------" + "\n" + this.navn + "\n" + " Hobby: " + "\n" + hobbyToString();
 	}
 
 }

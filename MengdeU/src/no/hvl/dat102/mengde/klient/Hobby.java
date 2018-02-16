@@ -9,7 +9,7 @@ public class Hobby {
 
 	}
 	public String toString() {
-		return "<" + this.hobbyNavn + "> ";
+		return this.hobbyNavn;
 	}
 	public String getHobbyNavn () {
 		return this.hobbyNavn;

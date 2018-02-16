@@ -215,8 +215,9 @@ public class TabellMengde<T> implements MengdeADT<T> {
 		String ut = "";
 		Iterator<T> oppramser = this.oppramser();
 		while (oppramser.hasNext()) {
-			ut += oppramser.next() + "\n";
+			ut += oppramser.next() + ", ";
 		}
+		ut = ut.substring(0, ut.length() - 2); //TAR VEKK SISTE KOMMA
 		return ut;
 	}
 

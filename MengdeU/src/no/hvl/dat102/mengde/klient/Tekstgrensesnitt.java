@@ -50,7 +50,7 @@ public class Tekstgrensesnitt {
 			String delstreg;
 
 			switch (svar) {
-				case 1:
+				case 1: //LEGG TIL MEDLEM
 					System.out.print("Gi Navn: ");
 					delstreg = scan.nextLine();
 					Medlem medlem1 = new Medlem(delstreg);
@@ -65,9 +65,11 @@ public class Tekstgrensesnitt {
 					System.out.print("Gi navn til medlem: ");
 					delstreg = scan.nextLine();
 					if (!data.getMedlem(delstreg).getHobbyer().toString().equals("")) {
-						System.out.println(data.getMedlem(delstreg).getHobbyer());
+						System.out.print(data.getMedlem(delstreg).getHobbyer());
+					}else {
+						System.out.println("Har ingen hobbyer");
 					}
-					System.out.println("Har ingen hobbyer");
+
 					break;
 				case 3:
 					data.skrivUtPar();
@@ -97,12 +99,7 @@ public class Tekstgrensesnitt {
 
 				case 0:
 					avslutt = true;
-
 			}
-
-
-
-
 		}
 	}
 
