@@ -69,7 +69,6 @@ public class Tekstgrensesnitt {
 					}else {
 						System.out.println("Har ingen hobbyer");
 					}
-
 					break;
 				case 3:
 					data.skrivUtPar();
