@@ -59,11 +59,25 @@ public class TabellOrdnetListe<T extends Comparable<T>> implements OrdnetListeAD
 	public int antall() {
 		return bak;
 	}
-	
-    @Override
-	public void leggTil(T element) {
-    	   	
-		//...Fyll ut
+
+	@Override
+	public void leggTil(T element) { //TODO Usikker på om denne virker som forventet.
+		//Sjekk om liste er full
+		if (liste.length == bak) {
+			utvid();
+		}
+
+		//Finn riktig plass å sette elementet, øker index til elementet er mindre eller lik element i tabell
+		int index = 0;
+		while(element.compareTo(liste[index]) > 0) {
+			index++;
+		}
+		//Flytter alle elementene 1 plass bakover
+		for(int i = bak; i >= index; i--) {
+			liste[bak+1] = liste[i];
+		}
+		liste[index] = element;
+		bak++;
 	}
 
 	
