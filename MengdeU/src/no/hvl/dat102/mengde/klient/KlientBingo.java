@@ -12,7 +12,7 @@ public class KlientBingo {
 		KjedetMengde<Bingokule> minMengde1 = new KjedetMengde<Bingokule>();
 		KjedetMengde<Bingokule> minMengde2 = new KjedetMengde<Bingokule>();
 		Bingokule kule1 = null;
-		Bingokule kule2 = null;sdfnjn
+		Bingokule kule2 = null;
 
 		for (int i = 1; i <= ANTALL_BALLER; i++) {
 			kule1 = new Bingokule(i);
