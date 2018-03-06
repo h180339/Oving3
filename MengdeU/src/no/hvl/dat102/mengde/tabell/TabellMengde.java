@@ -70,7 +70,7 @@ public class TabellMengde<T> implements MengdeADT<T> {
 		T svar = null;
 
 		for (int i = 0; i < antall; i++) {
-			if (element == tab[i]) {
+			if (element.equals(tab[i])) {
 				svar = this.tab[i];
 				tab[i] = tab[antall];
 				antall--;
@@ -145,7 +145,7 @@ public class TabellMengde<T> implements MengdeADT<T> {
 			}
 			if (tellerEl != teller2El) {
 				differensM.leggTil(tellerEl);
-				System.out.println(tellerEl);
+
 			}
 		}
 

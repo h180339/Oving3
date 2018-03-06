@@ -65,7 +65,7 @@ public class Tekstgrensesnitt {
 					System.out.print("Gi navn til medlem: ");
 					delstreg = scan.nextLine();
 					if (!data.getMedlem(delstreg).getHobbyer().toString().equals("")) {
-						System.out.print(data.getMedlem(delstreg).getHobbyer());
+						System.out.println(data.getMedlem(delstreg).getHobbyer());
 					}else {
 						System.out.println("Har ingen hobbyer");
 					}
@@ -100,6 +100,7 @@ public class Tekstgrensesnitt {
 					avslutt = true;
 			}
 		}
+		scan.close();
 	}
 
 }

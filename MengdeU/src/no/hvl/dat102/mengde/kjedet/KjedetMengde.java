@@ -163,7 +163,6 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 			}
 			if (tellerEl != teller2El) {
 				differensM.leggTil(tellerEl);
-				System.out.println(tellerEl);
 			}
 		}
 		
