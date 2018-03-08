@@ -20,16 +20,12 @@ public class KjedetOrdnetListe<T extends Comparable<T>> implements OrdnetListeAD
 
 	@Override
 	public T fjernFoerste() {
-		T svar = null;
-		//...Fyll ut
-		return svar;
+		return this.foerste != null? this.fjern(this.foerste.getElement()) : null;
 	}
 
 	@Override
 	public T fjernSiste() {
-		T svar = null;
-		//...Fyll ut
-		return svar;
+		return this.siste != null? this.fjern(this.siste.getElement()) : null;
 	}
 
 	@Override
