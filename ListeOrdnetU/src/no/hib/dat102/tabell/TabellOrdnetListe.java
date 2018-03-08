@@ -69,20 +69,22 @@ public class TabellOrdnetListe<T extends Comparable<T>> implements OrdnetListeAD
 	@Override
 	public void leggTil(T element) {
 		//Sjekk om liste er full
-		if (liste.length == bak) {
+
+		if (bak + 1 >= liste.length) {
 			utvid();
 		}
 
 		//Finn riktig plass å sette elementet, øker index til elementet er mindre eller lik element i tabell
 		int index = 0;
-		while(element.compareTo(liste[index]) > 0) {
+		while(index < bak && element.compareTo(liste[index]) > 0) {
 			index++;
 		}
 		//Flytter alle elementene 1 plass bakover
 		for(int i = bak; i >= index; i--) {
-			liste[bak+1] = liste[i];
+			liste[i + 1] = liste[i];
 		}
 		liste[index] = element;
+
 		bak++;
 	}
 
@@ -127,7 +129,7 @@ public class TabellOrdnetListe<T extends Comparable<T>> implements OrdnetListeAD
 
 
 	private void utvid() {
-		T[] hjelpeTabell = (T[]) (new Object[liste.length * 2]);
+		T[] hjelpeTabell = (T[]) (new Comparable[liste.length * 2]);
 
 		for (int i = 0; i < liste.length; i++){
 			hjelpeTabell[i] = liste[i];

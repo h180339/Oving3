@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/listeklient/KlientOrdnetListe.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/adt/KjedetKøADT.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/adt/ListeADT.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/adt/OrdnetListeADT.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/adt/SirkulærKøADT.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/exceptions/TomKøException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/kjedet/KjedetOrdnetListe.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/kjedet/LinearNode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/kø/KjedetKø.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/kø/LinearNode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/kø/SirkulærKø.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/listeklient/KlientOrdnetListe.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/listeklient/KlientTurnering.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/listeklient/Lag.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/listeklient/OrdnetTabellKlient.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/listeklient/Person.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/listeklient/Turnering.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ListeOrdnetU/src/no/hib/dat102/tabell/TabellOrdnetListe.java" charset="UTF-8" />
   </component>
 </project>

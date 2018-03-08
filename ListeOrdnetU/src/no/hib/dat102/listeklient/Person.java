@@ -2,43 +2,43 @@ package no.hib.dat102.listeklient;
 
 
 	public class Person implements Comparable<Person>{
-		private String for_navn;
-		private String etter_navn;
-		private int foedsels_aar;
+		private String fornavn;
+		private String etternavn;
+		private int foedselsaar;
 		
 		Person(String fornavn, String etternavn, int foedselsaar){
-			this.for_navn = fornavn;
-			this.etter_navn = etternavn;
-			this.foedsels_aar = foedselsaar;
+			this.fornavn = fornavn;
+			this.etternavn = etternavn;
+			this.foedselsaar = foedselsaar;
 		}
 		
-	public String getFor_navn() {
-			return for_navn;
+	public String getFornavn() {
+			return fornavn;
 		}
 
-		public void setFor_navn(String for_navn) {
-			this.for_navn = for_navn;
+		public void setFornavn(String for_navn) {
+			this.fornavn = for_navn;
 		}
 
-		public String getEtter_navn() {
-			return etter_navn;
+		public String getEtternavn() {
+			return etternavn;
 		}
 
-		public void setEtter_navn(String etter_navn) {
-			this.etter_navn = etter_navn;
+		public void setEtternavn(String etter_navn) {
+			this.etternavn = etter_navn;
 		}
 
-		public int getFoedsels_aar() {
-			return foedsels_aar;
+		public int getFoedselsaar() {
+			return foedselsaar;
 		}
 
-		public void setFoedsels_aar(int foedsels_aar) {
-			this.foedsels_aar = foedsels_aar;
+		public void setFoedselsaar(int foedsels_aar) {
+			this.foedselsaar = foedsels_aar;
 		}
 		
 		public String toString() {
-			return "Fornavn: " + getFor_navn() + "\n" + "Etternacn: " + getEtter_navn() + "\n"
-					+ "fødselsår: " + getFoedsels_aar() + "\n";
+			return "Fornavn: " + fornavn + "\n" + "Etternavn: " + etternavn + "\n"
+					+ "fødselsår: " + foedselsaar;
 		}
 
 	@Override
@@ -47,12 +47,12 @@ package no.hib.dat102.listeklient;
 		final int lik = 0;
 		final int etter = 1;
 		int resultat = 0;
-		if (foedsels_aar < denAndre.getFoedsels_aar()) {
-			return resultat = før;
-		} else if (this.foedsels_aar == denAndre.getFoedsels_aar()) {
-			int sammenligning = this.etter_navn.compareTo(denAndre.etter_navn);
+		if (denAndre != null && foedselsaar < denAndre.getFoedselsaar()) {
+			resultat = før;
+		} else if (this.foedselsaar == denAndre.getFoedselsaar()) {
+			int sammenligning = this.etternavn.compareTo(denAndre.etternavn);
 			if (sammenligning == lik) {
-				sammenligning = this.for_navn.compareTo(denAndre.for_navn);
+				sammenligning = this.fornavn.compareTo(denAndre.fornavn);
 			}
 			resultat = sammenligning;
 		} else {

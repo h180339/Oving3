@@ -24,7 +24,7 @@ public class LinearNode<T> {
     }
 
     /**
-     * Returnerer etterfølger.
+     * Returnerer etterfï¿½lger.
      *
      * @return neste node
      */

@@ -6,7 +6,7 @@ import no.hib.dat102.kjedet.KjedetOrdnetListe;
 
 //Turnering.java
 //
-//Demonstrerer første runde av en turnering ved hjelp av ordnet liste.
+//Demonstrerer fï¿½rste runde av en turnering ved hjelp av ordnet liste.
 
 public class Turnering {
 
@@ -30,7 +30,7 @@ public class Turnering {
 			turnering.leggTil(new Lag(navn, antallSeire));
 		}
 
-		System.out.println("\n Første turneringsrunde:");
+		System.out.println("\n Fï¿½rste turneringsrunde:");
 		int n = antallLag/2;
 		for (int antall = 1; antall <= n; antall++) {
 			lag1 = (turnering.fjernFoerste()).getNavn();
