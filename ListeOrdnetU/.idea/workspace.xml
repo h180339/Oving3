@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1335244f-49d3-41f4-9570-432d7276fcce" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/KlientBingo.java" afterPath="$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/KlientBingo.java" />
-    </list>
+    <list default="true" id="da377be5-8518-44c3-85b5-cf8e87171aff" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,31 +12,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="KlientBingo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/KlientBingo.java">
+      <file leaf-file-name="ListeADTTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestOrdnetListe/no/hib/dat102/ListeADTTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="3000">
+              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KjedetKø.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/kø/KjedetKø.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KjedetOrdnetListe.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/kjedet/KjedetOrdnetListe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2100">
+              <caret line="76" column="33" lean-forward="true" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#446#457#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="PersonKøKlient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/listeklient/PersonKøKlient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="43" column="12" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SirkulærKø.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/kø/SirkulærKø.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>system</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>system</replace>
-    </replaceStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -49,11 +75,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/no/hvl/dat102/mengde/tabell/TabellMengde.java" />
-        <option value="$PROJECT_DIR$/src/no/hvl/dat102/mengde/kjedet/KjedetMengde.java" />
-        <option value="$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/MedlemKlient.java" />
-        <option value="$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/Tekstgrensesnitt.java" />
-        <option value="$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/KlientBingo.java" />
+        <option value="$PROJECT_DIR$/src/no/hib/dat102/kjedet/KjedetOrdnetListe.java" />
+        <option value="$PROJECT_DIR$/src/no/hib/dat102/listeklient/PersonKøKlient.java" />
+        <option value="$PROJECT_DIR$/src/no/hib/dat102/kø/KjedetKø.java" />
       </list>
     </option>
   </component>
@@ -79,7 +103,6 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -95,73 +118,86 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="MengdeU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MengdeU" type="462c0819:PsiDirectoryNode" />
+              <item name="ListeOrdnetU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ListeOrdnetU" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MengdeU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MengdeU" type="462c0819:PsiDirectoryNode" />
+              <item name="ListeOrdnetU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ListeOrdnetU" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MengdeU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MengdeU" type="462c0819:PsiDirectoryNode" />
+              <item name="ListeOrdnetU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ListeOrdnetU" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mengde" type="462c0819:PsiDirectoryNode" />
+              <item name="dat102" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MengdeU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MengdeU" type="462c0819:PsiDirectoryNode" />
+              <item name="ListeOrdnetU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ListeOrdnetU" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mengde" type="462c0819:PsiDirectoryNode" />
-              <item name="adt" type="462c0819:PsiDirectoryNode" />
+              <item name="dat102" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MengdeU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MengdeU" type="462c0819:PsiDirectoryNode" />
+              <item name="ListeOrdnetU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ListeOrdnetU" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mengde" type="462c0819:PsiDirectoryNode" />
+              <item name="dat102" type="462c0819:PsiDirectoryNode" />
               <item name="kjedet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MengdeU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MengdeU" type="462c0819:PsiDirectoryNode" />
+              <item name="ListeOrdnetU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ListeOrdnetU" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mengde" type="462c0819:PsiDirectoryNode" />
-              <item name="klient" type="462c0819:PsiDirectoryNode" />
+              <item name="dat102" type="462c0819:PsiDirectoryNode" />
+              <item name="kø" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MengdeU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MengdeU" type="462c0819:PsiDirectoryNode" />
+              <item name="ListeOrdnetU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ListeOrdnetU" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mengde" type="462c0819:PsiDirectoryNode" />
+              <item name="dat102" type="462c0819:PsiDirectoryNode" />
+              <item name="listeklient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ListeOrdnetU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ListeOrdnetU" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dat102" type="462c0819:PsiDirectoryNode" />
               <item name="tabell" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MengdeU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MengdeU" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="ListeOrdnetU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ListeOrdnetU" type="462c0819:PsiDirectoryNode" />
+              <item name="TestOrdnetListe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ListeOrdnetU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ListeOrdnetU" type="462c0819:PsiDirectoryNode" />
+              <item name="TestOrdnetListe" type="462c0819:PsiDirectoryNode" />
+              <item name="dat102" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../EgneOppgaver/ListeOrdnetU" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -175,21 +211,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KlientBingo">
+  <component name="RunManager" selected="Application.PersonKøKlient">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="KlientBingo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="KlientOrdnetListe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="no.hvl.dat102.mengde.klient.*" />
+          <option name="PATTERN" value="no.hib.dat102.listeklient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="no.hvl.dat102.mengde.klient.KlientBingo" />
+      <option name="MAIN_CLASS_NAME" value="no.hib.dat102.listeklient.KlientOrdnetListe" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -198,17 +234,17 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="MengdeU" />
+      <module name="ListeOrdnetU" />
       <envs />
     </configuration>
-    <configuration name="MedlemKlient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonKøKlient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="no.hvl.dat102.mengde.klient.*" />
+          <option name="PATTERN" value="no.hib.dat102.listeklient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="no.hvl.dat102.mengde.klient.MedlemKlient" />
+      <option name="MAIN_CLASS_NAME" value="no.hib.dat102.listeklient.PersonKøKlient" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -217,7 +253,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="MengdeU" />
+      <module name="ListeOrdnetU" />
       <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -234,13 +270,18 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="KjedetMengdeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="MengdeU" />
+    <configuration name="ListeADTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="no.hib.dat102.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ListeOrdnetU" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KjedetMengdeTest" />
+      <option name="PACKAGE_NAME" value="no.hib.dat102" />
+      <option name="MAIN_CLASS_NAME" value="no.hib.dat102.ListeADTTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -315,15 +356,15 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.KjedetMengdeTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.KlientBingo" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MedlemKlient" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ListeADTTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.KlientOrdnetListe" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PersonKøKlient" />
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.KlientBingo" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MedlemKlient" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.KjedetMengdeTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.PersonKøKlient" />
+        <item index="1" class="java.lang.String" itemvalue="Application.KlientOrdnetListe" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ListeADTTest" />
       </list>
     </recent_temporary>
   </component>
@@ -335,32 +376,29 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1335244f-49d3-41f4-9570-432d7276fcce" name="Default" comment="" />
-      <created>1520296699994</created>
+      <changelist id="da377be5-8518-44c3-85b5-cf8e87171aff" name="Default" comment="" />
+      <created>1520518205652</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1520296699994</updated>
+      <updated>1520518205652</updated>
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KjedetMengdeTest - 2018.03.06 at 01h 45m 54s.xml">
-      <configuration name="KjedetMengdeTest" configurationId="JUnit" />
+    <history-entry file="ListeADTTest - 2018.03.08 at 15h 11m 32s.xml">
+      <configuration name="ListeADTTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KjedetMengdeTest - 2018.03.06 at 01h 46m 37s.xml">
-      <configuration name="KjedetMengdeTest" configurationId="JUnit" />
+    <history-entry file="ListeADTTest - 2018.03.08 at 15h 13m 25s.xml">
+      <configuration name="ListeADTTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KjedetMengdeTest - 2018.03.06 at 01h 48m 19s.xml">
-      <configuration name="KjedetMengdeTest" configurationId="JUnit" />
+    <history-entry file="ListeADTTest - 2018.03.08 at 15h 14m 43s.xml">
+      <configuration name="ListeADTTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KjedetMengdeTest - 2018.03.06 at 02h 15m 58s.xml">
-      <configuration name="KjedetMengdeTest" configurationId="JUnit" />
+    <history-entry file="ListeADTTest - 2018.03.08 at 15h 38m 21s.xml">
+      <configuration name="ListeADTTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KjedetMengdeTest - 2018.03.06 at 02h 16m 33s.xml">
-      <configuration name="KjedetMengdeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KjedetMengdeTest - 2018.03.06 at 02h 16m 58s.xml">
-      <configuration name="KjedetMengdeTest" configurationId="JUnit" />
+    <history-entry file="ListeADTTest - 2018.03.08 at 16h 09m 38s.xml">
+      <configuration name="ListeADTTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -369,13 +407,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955262" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8141147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2646503" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -384,13 +423,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -403,139 +441,89 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/KlientBingo.java">
+    <entry file="file://$PROJECT_DIR$/TestOrdnetListe/no/hib/dat102/ListeADTTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="2910">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/listeklient/KlientOrdnetListe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/kjedet/KjedetOrdnetListe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#457#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/MedlemKlient.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/listeklient/KlientOrdnetListe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="1458">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/adt/MengdeADT.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/tabell/TabellOrdnetListe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="-3042">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/kjedet/KjedetIterator.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/kø/SirkulærKø.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="450">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/kjedet/LinearNode.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/listeklient/PersonKøKlient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="810">
+          <caret line="43" column="12" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/Bingokule.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/kjedet/KjedetOrdnetListe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/Hobby.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/Datakontakt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/kjedet/KjedetMengde.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/Ordliste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/Tekstgrensesnitt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1877">
-          <caret line="102" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/tabell/TabellIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/KjedetMengdeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="201" selection-end-column="1" />
+        <state relative-caret-position="2100">
+          <caret line="76" column="33" lean-forward="true" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/tabell/TabellMengde.java">
+    <entry file="file://$PROJECT_DIR$/src/no/hib/dat102/kø/KjedetKø.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4012">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="224" selection-end-column="5" />
+        <state relative-caret-position="558">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/Medlem.java">
+    <entry file="file://$PROJECT_DIR$/TestOrdnetListe/no/hib/dat102/ListeADTTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="3000">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/no/hvl/dat102/mengde/klient/KlientBingo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#457#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -591,7 +579,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>MengdeU</last-edited>
+          <last-edited>ListeOrdnetU</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

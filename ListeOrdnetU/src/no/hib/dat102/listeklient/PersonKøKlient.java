@@ -9,7 +9,7 @@ import no.hib.dat102.tabell.TabellOrdnetListe;
 public class PersonKøKlient {
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
+//		Scanner input = new Scanner(System.in);
 
 		int antall = 0;
 		int i = 0;
@@ -44,6 +44,7 @@ public class PersonKøKlient {
 			System.out.println(Kø.pop());
 
 		}
+		input1.close();
 
 	}
 

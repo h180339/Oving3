@@ -5,7 +5,7 @@ import no.hib.dat102.exceptions.TomKøException;
 
 public class KjedetKø<T> implements KjedetKøADT<T> {
 
-	private LinearNode<T> start;
+	private LinearNode<T> start, siste;
 	private int antall;
 
 	public KjedetKø() {
@@ -18,25 +18,36 @@ public class KjedetKø<T> implements KjedetKøADT<T> {
 		LinearNode<T> nyStart = new LinearNode<T>(element);
 
 		nyStart.setNeste(start);
+		if (erTom()) {
+			this.siste = nyStart;
+		}
 		this.start = nyStart;
-
 		antall++;
 
 	}
 
 	@Override
 	public T pop() throws TomKøException {
-
+		T svar = null;
+		LinearNode<T> denne = start;
 		if (erTom()) {
 			throw new TomKøException("Stabel");
 		}
-
-		LinearNode<T> gStart = this.start;
-		T foo = gStart.getElement();
-
-		this.start = gStart.getNeste();
+		svar = siste.getElement();
+		if (start.equals(siste)) {
+			svar = start.getElement();
+			start = null;
+			siste = null;
+			antall--;
+			return svar;
+		}
+		while(!denne.getNeste().getElement().equals(svar)) {
+			denne = denne.getNeste();
+		}
+		siste = denne;
+		denne.setNeste(null);
 		antall--;
-		return foo;
+		return svar;
 	}
 
 	@Override
