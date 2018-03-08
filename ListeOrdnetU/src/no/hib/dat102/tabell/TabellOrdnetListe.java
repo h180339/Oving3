@@ -21,7 +21,7 @@ public class TabellOrdnetListe<T extends Comparable<T>> implements OrdnetListeAD
 	@Override
 	public T fjernSiste() {
 		T resultat = null;
-		resultat = liste[bak];
+		resultat = liste[bak-1];
 		bak--;
 		return resultat;
 	}
@@ -104,6 +104,7 @@ public class TabellOrdnetListe<T extends Comparable<T>> implements OrdnetListeAD
 				liste[i] = liste[i+1];
 			}
 		}
+		bak--;
 		return element;
 		
 	}		
